@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".HereMapActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="VLLcgoPNfv7vrPEvuUiQ" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="w8goF5iYHZdFDIkY0bigwA" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="TXpT1sbcpsmMBx4oe0QYwIFy8GHZbVGL8B/K7OZqthyty+BT5jWDrChoFBbVQWpcEsc90N9q3YPHbHejoGEZgf3mVXMwL90ncJg7zTt+W1KC23QAH0FFdetlpICXKYUDfssENjj3PR73+hJuKhtHZYRCc8uocdcH07e1Hdc8ernMFCHMidblm472XftKk1hzBYFUlXZIx0xxCkRAth4BuPbMf46LEtH9RsgZhqnPK+KsQZAFZhtYduSWNUCpsFzk2l8I22jxIexEK01XTDpydioxZAbJPj/7NXRBdHh47pslLqdo7MQL4xsa0h2GjqSFJ0wXpCKw45PB+RkhTteU+JTZvwWFHrlQh6IvsYD3eK9Q0gcVMIFwbrKmkYhWyZinH0AI1BgA0sGXOVgGvriZGlGlvIn5X0ycS/kQZNsTAgpJbjHja5xkGN4cB9rkvHAbrE7GbwHM7yZvcPrj8ltArqrU2LE+4/Tmvph5B5weueu4feLRvJTtC/kkKs5tfqMXMcYDckXvNt5QrcDOZRCnwFZY6RYS2ntETyvKaJkI0h/vmBHdBUXKpQ2gJZrbGDXl/oT4IFsN3uBCEyBDFKYTL3igZkDQGu7PgJfgAOamtL/6/uktw54erlZmDKLFv7pv0t2DvzOYSm8exnFMP433bF3FH1Og3MOi+oG5FQ4qfOI=" />
+    </application>
+
+</manifest>

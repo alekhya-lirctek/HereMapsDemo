@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/stop_type_lyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/pickUp_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/pickup_stop_background"
+            android:padding="7dp"
+            app:srcCompat="@drawable/local_parking"
+            android:tint="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/delivery_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/delivery_stop_background"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_d_alphabet_letter_letters_icon_209023"
+            android:tint="@color/black"
+            android:visibility="gone"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/current_location_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/current_location_background"
+            android:padding="5dp"
+            android:tint="@color/black"
+            android:visibility="gone"/>
+    </LinearLayout>
+</layout>
